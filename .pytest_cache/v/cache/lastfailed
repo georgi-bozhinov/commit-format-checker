@@ -1,0 +1,4 @@
+{
+  "test_validator.py::test_validation_on_valid_messages[]": true,
+  "test_validator.py::test_validation_on_valid_messages[fix(app.py): Fixed issue #250 \\n\\nBREAKING CHANGE: Changed x method]": true
+}
