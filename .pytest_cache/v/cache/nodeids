@@ -1,9 +1,0 @@
-[
-  "test_validator.py::test_validation_on_valid_messages[feature(app.py): Add changes to the file]",
-  "test_validator.py::test_validation_on_valid_messages[docs(app_2.js): Remove documentation]",
-  "test_validator.py::test_validation_on_valid_messages[fix(app.py): Fixed issue #250 \\n\\nBREAKING CHANGES: Changed x method]",
-  "test_validator.py::test_validation_on_valid_messages[fix(app.py): Fixed issue #250\\nProvided a fix for the issue that fixes it. \\n\\nBREAKING CHANGES: Changed x method]",
-  "test_validator.py::test_validation_on_invalid_messages[Add change to app.py]",
-  "test_validator.py::test_validation_on_invalid_messages[feature: add changes to file]",
-  "test_validator.py::test_validation_on_invalid_messages[fix(app.py): Fixed issue #250 BREAKING CHANGES: Changed x method]"
-]
