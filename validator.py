@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 """
 Module to validate if a git commit message is in a valid predefined format and return an error if it's not
 Functions as a git commit-msg hook
@@ -10,14 +12,14 @@ BREAKING_CHANGES = 'BREAKING CHANGES'
 ERROR_MESSAGE = \
 """
 Commit must be in the form:
-<feature|fix|style|docs|test>(<file>): <description>
+<feature|fix|style|docs|test>(<file>(optional)): <description>
 
 <detailed description> ( optional )
 
 <BREAKING CHANGES>: <description> ( optional )
 """
 
-BASE_FORMAT = r'(feature|fix|style|docs|text)(\([a-zA-Z0-9._-]*\)): *\w+'
+BASE_FORMAT = r'(feature|fix|style|docs|test)(\([a-zA-Z0-9._-]*\))?: *\w+'
 CHANGE_FORMAT = r'({}): *.*'.format(BREAKING_CHANGES)
 
 def _validate_first_line(msg):
@@ -69,7 +71,7 @@ VALIDATORS = [
 def validate(msg):
     """
     Validates a git commit message to be in the following format:
-    <feature|fix|style|docs|test>(<file(s)>): <description>
+    <feature|fix|style|docs|test>(<file>(optional)): <description>
 
     <detailed description>
 
@@ -77,6 +79,8 @@ def validate(msg):
 
     For example:
     docs(validator.py): Add docstring to validate function
+
+    Adding docstring for more clarity of functionality
 
     BREAKING CHANGES: Deleted the function
     """

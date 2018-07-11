@@ -7,10 +7,10 @@ VALID_MESSAGES =  [
     "docs(app_2.js): Remove documentation",
     """fix(app.py): Fixed issue #250 \n\nBREAKING CHANGES: Changed x method""",
     """fix(app.py): Fixed issue #250\nProvided a fix for the issue that fixes it. \n\nBREAKING CHANGES: Changed x method""",
+    "feature: add changes to file",
 ]
 INVALID_MESSAGES =  [
     "Add change to app.py",
-    "feature: add changes to file",
     "fix(app.py): Fixed issue #250 BREAKING CHANGES: Changed x method",
 ]
 
