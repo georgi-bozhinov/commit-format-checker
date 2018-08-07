@@ -7,6 +7,7 @@ Functions as a git commit-msg hook
 
 import re
 import sys
+from semantic_release import cli
 
 BREAKING_CHANGES = 'BREAKING CHANGES'
 ERROR_MESSAGE = \
